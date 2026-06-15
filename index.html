@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fayshal Rana">
+  <title>HTML & CSS Practice - Fayshal Rana</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #2c5aa0;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #1e4078;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #2c5aa0;
+      border-bottom: 2px solid #2c5aa0;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      margin: 15px 0 8px;
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2c5aa0;
+    }
+
+    ul, ol {
+      margin: 10px 0 10px 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #2c5aa0;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .inline-label {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    button {
+      background: #2c5aa0;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin-right: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1e4078;
+    }
+
+    .reset-btn {
+      background: #888;
+    }
+
+    blockquote {
+      border-left: 4px solid #2c5aa0;
+      padding-left: 15px;
+      margin: 15px 0;
+      color: #555;
+      font-style: italic;
+    }
+
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      margin: 10px 0;
+      font-size: 0.85rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    figure {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    aside {
+      background: #eef3fa;
+      border: 1px solid #c5d5ef;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
+    address {
+      font-style: normal;
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    .flex-box {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .flex-box div {
+      flex: 1;
+      background: #2c5aa0;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .grid-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .grid-box div {
+      background: #5a8fd4;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .color-box {
+      width: 100px;
+      height: 60px;
+      background: #e74c3c;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML &amp; CSS Elements Practice</h1>
+    <p>Name: Fayshal Rana | ID: 2251091080 | Batch: 63B</p>
+  </header>
+
+  <nav>
+    <a href="#headings">Headings</a>
+    <a href="#text">Text</a>
+    <a href="#lists">Lists</a>
+    <a href="#table">Table</a>
+    <a href="#form">Form</a>
+    <a href="#media">Media</a>
+    <a href="#css">CSS</a>
+  </nav>
+
+  <main>
+
+    <section id="headings">
+      <h2>Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+
+    <section id="text">
+      <h2>Text Formatting</h2>
+      <p>This is a normal paragraph. I am <strong>Fayshal Rana</strong> from batch <em>63B</em>. My student ID is <mark>2251091080</mark>.</p>
+      <p>Water formula is H<sub>2</sub>O. Area of circle is &pi;r<sup>2</sup>. Save file with <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are used to build web pages.</p>
+      <p>My teacher said <q>practice makes perfect</q> about web design.</p>
+
+      <blockquote>
+        Learning HTML is the first step to become a web developer.
+        <cite>— Web Programming Course</cite>
+      </blockquote>
+
+      <pre><code>&lt;p&gt;Hello World&lt;/p&gt;</code></pre>
+
+      <p>Submitted on: <time datetime="2026-06-11">11 June 2026</time></p>
+
+      <address>
+        Fayshal Rana<br>
+        Student ID: 2251091080<br>
+        Batch: 63B
+      </address>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML tags</li>
+        <li>CSS selectors</li>
+        <li>Page layout</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Write HTML structure</li>
+        <li>Add CSS styling</li>
+        <li>Check in browser</li>
+      </ol>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Used for page structure</dd>
+        <dt>CSS</dt>
+        <dd>Used for page design</dd>
+      </dl>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <caption>My Class Info</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Batch</th>
+            <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fayshal Rana</td>
+            <td>2251091080</td>
+            <td>63B</td>
+            <td>Web Programming</td>
+          </tr>
+          <tr>
+            <td>Example Student</td>
+            <td>2251091001</td>
+            <td>63B</td>
+            <td>Web Programming</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Batch 63B - Web Programming Lab</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form</h2>
+      <form action="#" method="post" onsubmit="event.preventDefault(); alert('Form submitted');">
+        <fieldset>
+          <legend>Student Details</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" value="Fayshal Rana">
+
+          <label for="sid">Student ID</label>
+          <input type="text" id="sid" name="sid" value="2251091080">
+
+          <label for="batch">Batch</label>
+          <input type="text" id="batch" name="batch" value="63B">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com">
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+
+          <label for="color">Favorite Color</label>
+          <input type="color" id="color" name="color" value="#2c5aa0">
+
+          <label for="course">Course</label>
+          <select id="course" name="course">
+            <option>Web Programming</option>
+            <option>Data Structure</option>
+            <option>Database</option>
+          </select>
+
+          <label for="about">About Me</label>
+          <textarea id="about" name="about" rows="3">I am learning HTML and CSS.</textarea>
+
+          <label for="file">Upload File</label>
+          <input type="file" id="file" name="file">
+
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="pass">
+
+          <p>
+            <label class="inline-label"><input type="checkbox" name="agree" checked> I agree to submit</label>
+          </p>
+
+          <p>Experience Level:</p>
+          <label class="inline-label"><input type="radio" name="level" value="beginner" checked> Beginner</label>
+          <label class="inline-label"><input type="radio" name="level" value="intermediate"> Intermediate</label>
+
+          <label for="progress">Assignment Progress</label>
+          <input type="range" id="progress" name="progress" min="0" max="100" value="80"
+            oninput="document.getElementById('prog-out').value = this.value + '%'">
+          <output id="prog-out">80%</output>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </form>
+    </section>
+
+    <section id="media">
+      <h2>Media &amp; Other Elements</h2>
+
+      <figure>
+        <img src="https://picsum.photos/400/200" alt="Sample image for practice" width="400" height="200">
+        <figcaption>Sample image using img tag</figcaption>
+      </figure>
+
+      <p>Assignment completion:</p>
+      <progress value="85" max="100">85%</progress>
+
+      <p>Skill level:</p>
+      <meter value="0.7" min="0" max="1">70%</meter>
+
+      <details>
+        <summary>What did I learn?</summary>
+        <p>I learned about HTML tags like header, section, table, form and basic CSS like color, margin, flex and grid.</p>
+      </details>
+
+      <aside>
+        <h3>Note</h3>
+        <p>This page is my practice work for the Web Programming course. Batch 63B.</p>
+      </aside>
+    </section>
+
+    <section id="css">
+      <h2>CSS Examples</h2>
+
+      <h3>Flexbox</h3>
+      <div class="flex-box">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+      </div>
+
+      <h3>Grid</h3>
+      <div class="grid-box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+
+      <h3>Border Radius &amp; Background Color</h3>
+      <div class="color-box"></div>
+
+      <hr>
+
+      <article>
+        <h3>Short Article</h3>
+        <p><dfn>CSS</dfn> helps us style HTML pages. We can change colors, fonts, and layout easily.<br>
+        This line starts after a line break.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Submitted by Fayshal Rana | ID: 2251091080 | Batch: 63B</p>
+    <p>Web Programming Lab Work &copy; 2026</p>
+  </footer>
+
+</body>
+</html>
